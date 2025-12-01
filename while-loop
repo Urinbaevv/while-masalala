@@ -6,3 +6,15 @@ while asl_son > 0:
     yigindi = yigindi + raqam
     asl_son = asl_son // 10
     print(f"{son} ning raqamlar yig'indisi: {yigindi}")
+
+son = int(input("Sonni kiritng: "))
+boluvchilar_yigindisi = 0
+boluvchi = 1
+while boluvchi < son:
+    if son % boluvchi == 0:
+        boluvchilar_yigindisi = boluvchilar_yigindisi + boluvchi
+    boluvchi = boluvchi + 1
+if boluvchilar_yigindisi == son:
+        print(f"{son} - mukammal son!")
+else:
+    print(f"{son} - mukammal son emas!")
