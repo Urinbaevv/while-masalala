@@ -1,0 +1,8 @@
+son = int(input("Sonni kiriting: "))
+yigindi = 0
+asl_son = son
+while asl_son > 0:
+    raqam = asl_son % 10
+    yigindi = yigindi + raqam
+    asl_son = asl_son // 10
+    print(f"{son} ning raqamlar yig'indisi: {yigindi}")
